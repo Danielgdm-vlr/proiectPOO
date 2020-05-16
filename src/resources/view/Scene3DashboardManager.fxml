@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Scene3DashboardManagerController">
+   <children>
+      <Label layoutX="272.0" layoutY="22.0" text="Cheers Sir!" />
+      <Label layoutX="258.0" layoutY="45.0" text="Glad to see you!" />
+      <Button fx:id="buttonSeeGymHalls" layoutX="81.0" layoutY="86.0" mnemonicParsing="false" onAction="#onClickButtonSeeGymHalls" text="See All the GYM halls" />
+      <Button fx:id="buttonAddTrainer" layoutX="81.0" layoutY="143.0" mnemonicParsing="false" onAction="#onClickButtonAddTrainer" text="Add new trainer to the GYM" />
+      <Button fx:id="buttonSeeClientsFeedback" layoutX="81.0" layoutY="200.0" mnemonicParsing="false" onAction="#onClickButtonSeeClientsFeedback" text="See clients feedback" />
+      <Button fx:id="buttonSeeTotalWorkingHours" layoutX="81.0" layoutY="257.0" mnemonicParsing="false" onAction="#onClickButtonSeeTotalWorkingHours" text="See total working hours" />
+   </children>
+</AnchorPane>
