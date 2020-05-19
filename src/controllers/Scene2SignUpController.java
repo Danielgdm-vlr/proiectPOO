@@ -103,9 +103,9 @@ public class Scene2SignUpController {
                 ps.setInt(3, rs.getInt("clientId"));
             ps.executeUpdate();
             buttonSignUp.getScene().getWindow().hide();
-            Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene3DashboardClient.fxml"));
+            Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene2SignUpClientCreateMembership.fxml"));
             Stage logInStage = new Stage();
-            logInStage.setTitle("RAW POWER GYM - Client`s Dashboard ");
+            logInStage.setTitle("RAW POWER GYM - Create your MEMBERSHIP");
             logInStage.setScene(new Scene(root));
             logInStage.show();
         }catch (Exception e){
