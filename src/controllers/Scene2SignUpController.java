@@ -51,7 +51,7 @@ public class Scene2SignUpController {
         buttonSignUp.setDisable(true);
     }
 
-    public void keyReleasedProperty() throws Exception{
+    public void keyReleasedProperty(){
         String un = username.getText();
         String pw = password.getText();
         String fn = firstName.getText();
@@ -79,7 +79,7 @@ public class Scene2SignUpController {
 
     }
 
-    public void onClickButtonSignUp()throws Exception{
+    public void onClickButtonSignUp(){
         connection = handler.getConnection();
         try{
 

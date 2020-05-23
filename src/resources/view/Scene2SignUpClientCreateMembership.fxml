@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Hyperlink?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Separator?>
 <?import javafx.scene.image.Image?>
@@ -18,13 +18,19 @@
       <Label layoutX="284.0" layoutY="90.0" text="Great!" />
       <Label layoutX="31.0" layoutY="107.0" text="Now that you have completed your registration, let`s get you started by creating your MEMBERSHIP!" />
       <Label layoutX="39.0" layoutY="159.0" text="Select the gym hall:" />
-      <ComboBox layoutX="150.0" layoutY="155.0" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxSelectGym" layoutX="150.0" layoutY="155.0" onAction="#keyReleasedProperty" prefWidth="150.0" />
       <Separator layoutX="17.0" layoutY="189.0" prefHeight="3.0" prefWidth="318.0" />
       <Label layoutX="23.0" layoutY="200.0" text="Select the type of diet:" />
-      <ComboBox layoutX="150.0" layoutY="196.0" prefWidth="150.0" />
       <Separator layoutX="17.0" layoutY="228.0" prefHeight="3.0" prefWidth="318.0" />
-      <Label layoutX="63.0" layoutY="241.0" text="Select the diet:" />
-      <ComboBox layoutX="150.0" layoutY="237.0" prefWidth="150.0" />
-      <Hyperlink layoutX="271.0" layoutY="353.0" text="Go to the next page to finish creating the MEMBERSHIP!" fx:id="hyperlinkGotoNextPageMembership" onAction="#onClickGoToNextPage"/>
+      <Label layoutX="261.0" layoutY="242.0" text="Select the diet:" />
+      <ComboBox fx:id="comboBoxSelectDiet" layoutX="150.0" layoutY="196.0" onAction="#keyReleasedProperty" prefWidth="150.0" />
+      <Button fx:id="buttonNextPageMembership" layoutX="545.0" layoutY="361.0" mnemonicParsing="false" onAction="#onClickGoToNextPage" text="Go!" />
+      <Label layoutX="247.0" layoutY="365.0" text="Go to the next page to finish creating the MEMBERSHIP!" />
+      <ComboBox fx:id="comboBoxSelectDietBreakfast" layoutX="39.0" layoutY="283.0" onAction="#keyReleasedProperty" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxSelectDietLunch" layoutX="226.0" layoutY="283.0" onAction="#keyReleasedProperty" prefWidth="150.0" />
+      <ComboBox fx:id="comboBoxSelectDietDinner" layoutX="414.0" layoutY="283.0" onAction="#keyReleasedProperty" prefWidth="150.0" />
+      <Label layoutX="91.0" layoutY="266.0" text="Breakfast" />
+      <Label layoutX="284.0" layoutY="266.0" text="Lunch" />
+      <Label layoutX="473.0" layoutY="266.0" text="Dinner" />
    </children>
 </AnchorPane>
