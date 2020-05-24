@@ -132,26 +132,7 @@ public class Scene2SignUpClientCreateMembershipController {
 
         buttonNextPageMembership.setDisable(bln);
     }
-    /* comboBoxSelectDietBreakfast.getItems().addAll(rss.getString("breakfast") + " " +
-                                    "(" + rss.getInt("breakfastCal") + " Cal.)");
-                            comboBoxSelectDietLunch.getItems().addAll(rss.getString("Lunch") + " " +
-                                    "(" + rss.getInt("LunchCal") + " Cal.)");
-                            comboBoxSelectDietDinner.getItems().addAll(rss.getString("Dinner") + " " +
-                                    "(" + rss.getInt("DinnerCal") + " Cal.)");*/
     public void onClickGoToNextPage() throws IOException {
-        /*String sql4 = "INSERT INTO membership(gymId) VALUES(?)";
-        ps4  = connection.prepareStatement(sql4);
-        int idGym;
-        String gymChoice = getGymChoice();
-        while(rs1.next()){
-            if(rs1.getString("gymHall").equals(gymChoice))
-                idGym = rs.getInt("gymId");
-                break;
-            }
-        }
-        ps4.setString(1, idGym);
-        ps4.executeUpdate();
-        */
         buttonNextPageMembership.getScene().getWindow().hide();
         Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene2aSignUpClientCreateMembership.fxml"));
         Stage signUpClient2 = new Stage();

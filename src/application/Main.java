@@ -15,7 +15,8 @@ public class Main extends Application {
         //Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene3DashboardManager.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene3DashboardTrainer.fxml"));
         //Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene3DashboardClient.fxml"));
-        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene2SignUpClientCreateMembership.fxml"));
+        //Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene2SignUpClientCreateMembership.fxml"));
+        Parent root = FXMLLoader.load(getClass().getResource("/resources/view/Scene2aSignUpClientCreateMembership.fxml"));
         primaryStage.setTitle(title);
         primaryStage.setScene(new Scene(root));
         primaryStage.show();
